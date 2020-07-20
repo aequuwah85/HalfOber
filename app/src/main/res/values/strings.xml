@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SSMEAL</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_siparis">Sipariş</string>
+    <string name="title_menu">Menü</string>
+    <string name="title_hesap">Hesap</string>
+</resources>

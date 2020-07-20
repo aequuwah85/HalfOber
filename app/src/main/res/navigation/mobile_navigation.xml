@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_siparis">
+
+    <fragment
+        android:id="@+id/navigation_siparis"
+        android:name="com.example.ssmeal.ui.siparis.HomeFragment"
+        android:label="@string/title_siparis"
+        tools:layout="@layout/fragment_siparis" />
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.ssmeal.ui.menu.DashboardFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/navigation_hesap"
+        android:name="com.example.ssmeal.ui.hesap.NotificationsFragment"
+        android:label="@string/title_hesap"
+        tools:layout="@layout/fragment_hesap" />
+</navigation>

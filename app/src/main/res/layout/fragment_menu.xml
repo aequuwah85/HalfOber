@@ -6,22 +6,32 @@
     android:layout_height="match_parent"
     android:id="@+id/rec"
     android:orientation="vertical"
-    tools:context=".ui.menu.DashboardFragment"
     android:weightSum="1">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:textAlignment="center"
-        android:layout_weight="0.1"
+        android:layout_weight="0.058"
         android:text="Kategoriler"
-        android:autoSizeTextType="uniform" />
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0.002"
+        android:background="#000" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoryview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.9" />
+        android:layout_weight="0.940"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        tools:layout_editor_absoluteY="19dp" />
+
 
 </LinearLayout>

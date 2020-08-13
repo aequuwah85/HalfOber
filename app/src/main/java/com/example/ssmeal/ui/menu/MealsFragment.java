@@ -2,8 +2,10 @@ package com.example.ssmeal.ui.menu;
 
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -36,6 +38,7 @@ public class MealsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         Bundle bundle=this.getArguments();
         intentCategory=bundle.getInt("categoryId");
         View root = inflater.inflate(R.layout.fragment_meals, container, false);
@@ -43,6 +46,9 @@ public class MealsFragment extends Fragment {
         recyclerView=(RecyclerView) root.findViewById(R.id.mealss);
         apiInterface = Api.getClient().create(ApiInterface.class);
         Call<List<Meal>> call=apiInterface.getMeals(intentCategory);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL);
+        dividerItemDecoration.setDrawable(ContextCompat.getDrawable(getContext(),R.drawable.line_divider));
+        recyclerView.addItemDecoration(dividerItemDecoration);
        call.enqueue(new Callback<List<Meal>>() {
            @Override
            public void onResponse(Call<List<Meal>> call, Response<List<Meal>> response) {
@@ -64,5 +70,6 @@ public class MealsFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
+
     }
 }

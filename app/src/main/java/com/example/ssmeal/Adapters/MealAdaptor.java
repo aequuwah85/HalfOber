@@ -33,7 +33,6 @@ public class MealAdaptor extends RecyclerView.Adapter<MealAdaptor.ViewHolder> {
          Meal meal=mealList.get(position);
          holder.mealName.setText(meal.getMealName());
         holder.mealPrice.setText(String.valueOf(meal.getMealPrice()));
-         holder.mealCalory.setText(String.valueOf(meal.getMealCalory()));
          holder.mealDes.setText(meal.getMealDescription());
     }
 
@@ -48,7 +47,6 @@ public class MealAdaptor extends RecyclerView.Adapter<MealAdaptor.ViewHolder> {
             super(itemView);
             mealName=itemView.findViewById(R.id.mealName);
             mealDes=itemView.findViewById(R.id.mealDes);
-            mealCalory=itemView.findViewById(R.id.mealCalory);
             mealPrice=itemView.findViewById(R.id.mealPrice);
         }
     }

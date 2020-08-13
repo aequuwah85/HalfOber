@@ -2,6 +2,8 @@ package com.example.ssmeal;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         qrButton = findViewById(R.id.qrButton);
         qrButton.setOnClickListener(this);
+
+
     }
 
     @Override

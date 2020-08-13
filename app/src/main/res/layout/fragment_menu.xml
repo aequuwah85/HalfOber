@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorAlternative2"
     android:layout_height="match_parent"
-    tools:context=".ui.menu.DashboardFragment">
+    android:id="@+id/rec"
+    android:orientation="vertical"
+    tools:context=".ui.menu.DashboardFragment"
+    android:weightSum="1">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/menuText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Menü fragmenti"
-            android:textSize="24dp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_bold"/>
-    </LinearLayout>
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:layout_weight="0.1"
+        android:text="Kategoriler"
+        android:autoSizeTextType="uniform" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" />
+
+</LinearLayout>

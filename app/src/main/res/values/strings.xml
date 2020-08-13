@@ -4,4 +4,7 @@
     <string name="title_siparis">Sipariş</string>
     <string name="title_menu">Menü</string>
     <string name="title_hesap">Hesap</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

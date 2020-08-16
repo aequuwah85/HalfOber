@@ -2,14 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_siparis"
-        android:icon="@drawable/siparis"
-        android:title="@string/title_siparis" />
-
-    <item
         android:id="@+id/navigation_menu"
         android:icon="@drawable/menu"
         android:title="@string/title_menu" />
+    <item
+        android:id="@+id/navigation_siparis"
+        android:icon="@drawable/siparis"
+        android:title="Sepetim"/>
 
     <item
         android:id="@+id/navigation_hesap"

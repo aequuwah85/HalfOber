@@ -5,22 +5,41 @@
     android:layout_width="match_parent"
     android:background="@color/colorAlternative2"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".ui.siparis.HomeFragment">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/siparisText"
+
+    <TextView
+    android:fontFamily="@font/poppins_bold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/recyclerSepet"
+    android:textAlignment="textEnd"
+    android:text="Total Price: 10£"
+    android:textSize="22dp"
+    android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/sepetimText"
+            android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sipariş fragmenti"
-            android:textSize="24dp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_bold"/>
-    </LinearLayout>
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sepeti Onayla"
+            android:textSize="20dp"
+            android:textColor="#3764A1"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:background="@color/zxing_transparent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sepetimText"
+        android:id="@+id/recyclerSepet">
+    </androidx.recyclerview.widget.RecyclerView>
+
 
 </RelativeLayout>

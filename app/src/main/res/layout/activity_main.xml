@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="SSMEAL APP"
+            android:text="HALF OBER"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="24dp" />

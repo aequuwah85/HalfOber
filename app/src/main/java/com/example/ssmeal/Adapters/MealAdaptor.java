@@ -42,7 +42,7 @@ public class MealAdaptor extends RecyclerView.Adapter<MealAdaptor.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView mealName,mealDes,mealPrice,mealCalory;
+        TextView mealName,mealDes,mealPrice;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             mealName=itemView.findViewById(R.id.mealName);
